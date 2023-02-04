@@ -1,0 +1,106 @@
+albums:
+  - title: C:\System32\media
+    date: 2023-02-04
+    filename: c-system32
+  - title: Escape, to a Different World
+    date: 2021-06-26
+    filename: escape-ep
+    links:
+      - platform: spotify
+        link: https://open.spotify.com/album/2s98Eod9rlG40dE1XuFLXQ
+      - platform: apple
+        name: Apple Music
+        link: https://lnk.to/vkpylQ/applemusic
+      - platform: youtube-music
+        name: YouTube Music
+        link: https://music.youtube.com/playlist?list=OLAK5uy_kcU6VPAqv3eCruKCQJE0KmGqUiGKiauqk
+      - platform: amazon-music
+        name: Amazon Music
+        link: https://lnk.to/vkpylQ/amazonmusic
+      - platform: deezer
+        link: https://www.deezer.com/album/275221742
+      - platform: tidal
+        link: https://listen.tidal.com/album/206595639
+      - platform: soundcloud
+        link: https://soundcloud.com/androidwg/sets/escape-to-a-different-world?si=94c45856b22347fdb1dc7c13da996c27&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+      - platform: bandcamp
+        link: https://androidwg.bandcamp.com/album/escape-to-a-different-world
+singles:
+  - title: My Trip to Canada
+    date: 2022-07-12
+    filename: trip-to-canada
+    links:
+      - platform: spotify
+        link: https://open.spotify.com/album/27P2xNzILzdBQldvTwzN1q
+      - platform: apple
+        name: Apple Music
+        link: https://music.apple.com/us/album/my-trip-to-canada-single/1634450818
+      - platform: youtube-music
+        name: YouTube Music
+        link: https://music.youtube.com/playlist?list=OLAK5uy_mapw0g-6n7YYOh54EdlT9wz3ZX8SXZR8k
+      - platform: amazon-music
+        name: Amazon Music
+        link: https://RecordU.lnk.to/sbcAYX/amazonmusic
+      - platform: deezer
+        link: https://www.deezer.com/album/335574057
+      - platform: tidal
+        link: https://www.tidal.com/album/237840469
+      - platform: soundcloud
+        link: https://soundcloud.com/androidwg/my-trip-to-canada?si=c3bc4a2fa5274a30a6ac3ac36131283e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+      - platform: bandcamp
+        link: https://androidwg.bandcamp.com/track/my-trip-to-canada
+  - title: Kakkoii!!
+    date: 2022-01-30
+    filename: kakkoii
+    links:
+      - platform: spotify
+        link: https://open.spotify.com/album/09daIdqni9H9KhH2TTopur
+      - platform: apple
+        name: Apple Music
+        link: https://music.apple.com/us/album/kakkoii-single/1633559246
+      - platform: youtube-music
+        name: YouTube Music
+        link: https://music.youtube.com/playlist?list=OLAK5uy_lSrMadDickgmoh7RCLTCT4C4j51SUVutA
+      - platform: amazon-music
+        name: Amazon Music
+        link: https://RecordU.lnk.to/zIaUHn/amazonmusic
+      - platform: deezer
+        link: https://www.deezer.com/album/333745097
+      - platform: tidal
+        link: https://tidal.com/browse/album/237012480
+      - platform: soundcloud
+        link: https://soundcloud.com/androidwg/kakkoii?si=1b4cc8e8a01a44c18d91dcddedf1da3c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+      - platform: bandcamp
+        link: https://androidwg.bandcamp.com/track/kakkoii
+  - title: Dreams
+    date: 2021-03-11
+    filename: dreams
+    links:
+      - platform: soundcloud
+        link: https://soundcloud.com/androidwg/dreams?si=e9fc5b54860045c7a0adc464f8889e55&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+  - title: Escape
+    date: 2020-09-30
+    filename: escape
+    links:
+      - platform: spotify
+        link: https://open.spotify.com/album/0fusIluOtv4OjsGzv3iHEj
+      - platform: apple
+        name: Apple Music
+        link: https://lnk.to/jobUnX/applemusic
+      - platform: youtube-music
+        name: YouTube Music
+        link: https://music.youtube.com/playlist?list=OLAK5uy_mTHNz6nU8pS1i_b8bgI55Z2AU95a0mrzo
+      - platform: amazon-music
+        name: Amazon Music
+        link: https://lnk.to/jobUnX/amazonmusic
+      - platform: deezer
+        link: https://www.deezer.com/album/275224552
+      - platform: tidal
+        link: https://listen.tidal.com/album/206595639
+      - platform: soundcloud
+        link: https://soundcloud.com/androidwg/escape?si=743745c7a5d54a99bf9bbf286f56540c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+      - platform: bandcamp
+        link: https://androidwg.bandcamp.com/track/escape
+
+
+
