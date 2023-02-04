@@ -26,7 +26,7 @@
 
 <style>
     .album {
-        margin: 32px auto;
+        margin: 32px auto 0;
         padding: 16px;
         border: solid #616161 1px;
 
@@ -35,6 +35,7 @@
 
     h3 {
         font-weight: 400;
+        margin-bottom: 10px;
     }
 
     .cover {
@@ -52,6 +53,6 @@
         gap: 8px;
 
         width: fit-content;
-        margin: auto;
+        margin: 16px auto auto;
     }
 </style>

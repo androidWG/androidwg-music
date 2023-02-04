@@ -29,6 +29,11 @@
 
 
 <style>
+    h2 {
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+
     #header {
         display: flex;
         flex-direction: row;        
