@@ -21,6 +21,7 @@
 
 <div id="links">
     <a href="https://instagram.com/android.wg" target="_blank" rel="noreferrer">« instagram »</a>
+    <a href="https://open.spotify.com/artist/3a9tneeFJxk0ag8UBmyRbL" target="_blank" rel="noreferrer">« spotify »</a>
     <a href="https://androidwg.bandcamp.com" target="_blank" rel="noreferrer">« bandcamp »</a>
     <a href="https://soundcloud.com/androidwg/tracks" target="_blank" rel="noreferrer">« soundcloud »</a>
 </div>
@@ -47,7 +48,7 @@
 
     #title {
         margin: 0;
-        font-size: min(10vw, 6rem);
+        font-size: max(min(10vw, 6rem), 3.5rem);
         transform: translate(0, max(-1vw, -8px));
     }
 
@@ -72,7 +73,18 @@
         width: fit-content;
     }
     #links > a {
-        font-size: x-large;
+        font-size: min(3vw, 2rem);
         color: #f44708;
+    }
+
+    @media(max-width: 700px) {
+        #links {
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        #links > a {
+            font-size: min(5vw, 1.5rem);
+        }
     }
 </style>
