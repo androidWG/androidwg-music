@@ -10,9 +10,19 @@
     music.shift()
 </script>
 
+<svelte:head>
+    <title>androidwg music</title>
+</svelte:head>
+
 <div id="header">
     <img id="icon" src="{icon}" alt="androidwg icon">
     <h1 id="title">androidwg</h1>
+</div>
+
+<div id="links">
+    <a href="https://instagram.com/android.wg" target="_blank" rel="noreferrer">« instagram »</a>
+    <a href="https://androidwg.bandcamp.com" target="_blank" rel="noreferrer">« bandcamp »</a>
+    <a href="https://soundcloud.com/androidwg/tracks" target="_blank" rel="noreferrer">« soundcloud »</a>
 </div>
 
 <div>
@@ -29,6 +39,18 @@
 
 
 <style>
+    #icon {
+        width: 12vw;
+        max-width: 85px;
+        aspect-ratio: 1/1;
+    }
+
+    #title {
+        margin: 0;
+        font-size: min(10vw, 6rem);
+        transform: translate(0, max(-1vw, -8px));
+    }
+
     h2 {
         margin-top: 16px;
         margin-bottom: 0;
@@ -43,12 +65,14 @@
         margin: auto;
     }
 
-    #icon {
-        width: 56px;
+    #links {
+        display: flex;
+        gap: 16px;
+        margin: 16px auto 32px;
+        width: fit-content;
     }
-
-    #title {
-        margin: 0;
-        font-size: 3rem;
+    #links > a {
+        font-size: x-large;
+        color: #f44708;
     }
 </style>
