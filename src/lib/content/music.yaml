@@ -2,6 +2,26 @@ albums:
   - title: C:\System32\media
     date: 2023-02-04
     filename: c-system32
+    links:
+      - platform: spotify
+        link: https://open.spotify.com/album/1Y74BzuV0yvV3toKu2w9bW
+      - platform: apple
+        name: Apple Music
+        link: https://music.apple.com/us/album/c-system32-media/1665923126
+      - platform: youtube-music
+        name: YouTube Music
+        link: https://music.youtube.com/playlist?list=OLAK5uy_kbvJ4x1jZmdg8O9INRJiF3ER9aQYE6XfQ
+      - platform: amazon-music
+        name: Amazon Music
+        link: https://music.amazon.com/albums/B0BSHBRMQQ
+      - platform: deezer
+        link: https://deezer.page.link/M4VpgPPMCmjzavEk9
+      - platform: tidal
+        link: https://tidal.com/browse/album/271817482
+      - platform: soundcloud
+        link: https://soundcloud.com/androidwg/sets/csystem32media
+      - platform: bandcamp
+        link: https://androidwg.bandcamp.com/album/c-system32-media
   - title: Escape, to a Different World
     date: 2021-06-26
     filename: escape-ep
