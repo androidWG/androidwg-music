@@ -1,31 +1,57 @@
 <script>
+    import Button from "$lib/Button.svelte";
+
     export let title = "";
     export let cover = "";
-    export let releaseDate = "";
+    export let releaseDate = undefined;
     export let links = []
+
+    const options = {
+        year: "numeric",
+        month: "short",
+        day: "numeric"
+    }
+    let releaseDateFormatted = releaseDate.toLocaleDateString("en-US", options)
 </script>
 
 <div class="album">
     <img class="cover" src="/covers/{cover}.jpg" alt="'{title}' cover art">
-    <h3><b>{title}</b> • {releaseDate}</h3>
+    <h3><b>{title}</b> • {releaseDateFormatted}</h3>
     <div class="links">
         {#each links as link}
-            <a href="{link[0]}">{link[1]}</a>
+            <Button name="{link.platform}" icon="{link.platform}" link="{link['link']}"></Button>
         {/each}
     </div>
 </div>
 
 <style>
+    .album {
+        margin: 32px auto;
+        padding: 16px;
+        border: solid #616161 1px;
+
+        width: fit-content;
+    }
+
     h3 {
         font-weight: 400;
     }
 
     .cover {
-        border-color: white;
-        border-width: 2px;
-        border-style: groove;
+        border: solid lightgray 2px;
 
-        width: 75vw;
-        max-width: 400px;
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+
+        width: fit-content;
+        margin: auto;
     }
 </style>
