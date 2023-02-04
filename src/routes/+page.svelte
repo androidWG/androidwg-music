@@ -1,8 +1,13 @@
 <script>
     import Album from "$lib/Album.svelte";
     import icon from "$lib/assets/icon_white.svg"
+
     /** @type {import('./$types').PageData} */
     export let data;
+
+    const newest = data.music[0];
+    let music = [...data.music]
+    music.shift()
 </script>
 
 <div id="header">
@@ -12,13 +17,13 @@
 
 <div>
     <h2>newest release</h2>
-    <Album title="C:\System32\media" cover="c-system32" releaseDate="Feb 4th, 2023"></Album>
+    <Album title="{newest.title}" cover="{newest.filename}" releaseDate="{newest.date}" links="{newest.links}"></Album>
 </div>
 
 <div>
     <h2>the other stuff</h2>
-    {#each data.music as music}
-        <Album title="{music['title']}" cover="{music['filename']}" releaseDate="{music['date']}"></Album>
+    {#each music as m}
+        <Album title="{m.title}" cover="{m.filename}" releaseDate="{m.date}" links="{m.links}"></Album>
     {/each}
 </div>
 
