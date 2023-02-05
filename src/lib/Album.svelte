@@ -1,6 +1,8 @@
 <script>
     import Button from "$lib/Button.svelte";
 
+    export let compact = true;
+
     export let title = "";
     export let cover = "";
     export let releaseDate = undefined;
@@ -11,17 +13,25 @@
         month: "short",
         day: "numeric"
     }
-    let releaseDateFormatted = releaseDate.toLocaleDateString("en-US", options)
+
+    let releaseDateFormatted;
+    if (releaseDate) {
+        releaseDateFormatted = releaseDate.toLocaleDateString("en-US", options)
+    }
 </script>
 
-<div class="album">
+<div class="album" class:compact>
     <a href="/{cover}">
         <img class="cover" src="/covers/{cover}.jpg" alt="'{title}' cover art">
     </a>
-    <h3><b>{title}</b> • {releaseDateFormatted}</h3>
-    <div class="links">
+    <h3><b>{title}</b>
+        {#if releaseDate}
+            • {releaseDateFormatted}
+        {/if}
+    </h3>
+    <div class="links" class:compact>
         {#each links as link}
-            <Button name="{link.platform}" icon="{link.platform}" link="{link['link']}"></Button>
+            <Button compact="{compact}" name="{link.platform}" icon="{link.platform}" link="{link['link']}"></Button>
         {/each}
     </div>
 </div>
@@ -33,11 +43,12 @@
         border: solid #616161 1px;
 
         width: fit-content;
+        font-size: 1.5em;
     }
 
     h3 {
         font-weight: 400;
-        margin-bottom: 10px;
+        margin-bottom: 1em;
     }
 
     .cover {
@@ -49,12 +60,19 @@
 
     .links {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px;
 
-        width: fit-content;
+        width: 100%;
         margin: 16px auto auto;
+    }
+
+    .compact {
+        flex-direction: row;
+        width: fit-content;
+
+        font-size: 1em;
     }
 </style>

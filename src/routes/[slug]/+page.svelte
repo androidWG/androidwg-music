@@ -9,4 +9,4 @@
 
 <Header></Header>
 
-<Album title="{release.title}" releaseDate="{release.date}" cover="{release.filename}" links="{release.links}"></Album>
+<Album compact="{false}" title="{release.title}" cover="{release.filename}" links="{release.links}"></Album>
