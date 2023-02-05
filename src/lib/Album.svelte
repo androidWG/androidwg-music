@@ -15,7 +15,9 @@
 </script>
 
 <div class="album">
-    <img class="cover" src="/covers/{cover}.jpg" alt="'{title}' cover art">
+    <a href="/{cover}">
+        <img class="cover" src="/covers/{cover}.jpg" alt="'{title}' cover art">
+    </a>
     <h3><b>{title}</b> • {releaseDateFormatted}</h3>
     <div class="links">
         {#each links as link}
