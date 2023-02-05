@@ -1,5 +1,7 @@
 <script>
     import icon from "$lib/assets/icon_white.svg"
+
+    export let compact = false;
 </script>
 
 <div id="header">
@@ -7,12 +9,14 @@
     <h1 id="title"><a href="/">androidwg</a></h1>
 </div>
 
-<div id="links">
-    <a href="https://instagram.com/android.wg" target="_blank" rel="noreferrer">« instagram »</a>
-    <a href="https://open.spotify.com/artist/3a9tneeFJxk0ag8UBmyRbL" target="_blank" rel="noreferrer">« spotify »</a>
-    <a href="https://androidwg.bandcamp.com" target="_blank" rel="noreferrer">« bandcamp »</a>
-    <a href="https://soundcloud.com/androidwg/tracks" target="_blank" rel="noreferrer">« soundcloud »</a>
-</div>
+{#if (!compact)}
+    <div id="links">
+        <a href="https://instagram.com/android.wg" target="_blank" rel="noreferrer">« instagram »</a>
+        <a href="https://open.spotify.com/artist/3a9tneeFJxk0ag8UBmyRbL" target="_blank" rel="noreferrer">« spotify »</a>
+        <a href="https://androidwg.bandcamp.com" target="_blank" rel="noreferrer">« bandcamp »</a>
+        <a href="https://soundcloud.com/androidwg/tracks" target="_blank" rel="noreferrer">« soundcloud »</a>
+    </div>
+{/if}
 
 <style>
     #icon {
@@ -50,5 +54,16 @@
     #links > a {
         font-size: min(3vw, 2rem);
         color: #f44708;
+    }
+
+    @media(max-width: 700px) {
+        #links {
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        #links > a {
+            font-size: min(5vw, 1.5rem);
+        }
     }
 </style>

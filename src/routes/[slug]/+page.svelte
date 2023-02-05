@@ -7,6 +7,6 @@
     let release = data.release;
 </script>
 
-<Header></Header>
+<Header compact="{true}"></Header>
 
 <Album compact="{false}" title="{release.title}" cover="{release.filename}" links="{release.links}"></Album>
