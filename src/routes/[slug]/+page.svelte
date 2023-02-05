@@ -7,8 +7,6 @@
     let release = data.release;
 </script>
 
-{@debug release}
-
 <Header></Header>
 
 <Album title="{release.title}" releaseDate="{release.date}" cover="{release.filename}" links="{release.links}"></Album>

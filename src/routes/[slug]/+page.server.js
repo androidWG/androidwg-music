@@ -7,8 +7,6 @@ export function load({ params }) {
 	const file = fs.readFileSync(filepath, 'utf8');
 	const music = yaml.load(file);
 
-	console.log(params);
-
 	const all_music = music['albums'].concat(music['singles']);
 	let selected = all_music.filter((obj) => {
 		return obj.filename == params.slug;
